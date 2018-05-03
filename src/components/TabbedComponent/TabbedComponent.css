@@ -1,0 +1,53 @@
+.Option {
+    padding: 10px 80px;
+    display: inline-block;
+    background: #eaeaea;
+    border-right: solid 1px #dfdfdf;
+    border-top: solid 1px #dfdfdf;
+    border-bottom: solid 1px #dfdfdf;
+}
+
+.Option:not(.Selected):hover {
+    cursor: pointer;
+}
+
+.Option:first-of-type {
+    border-left: solid 1px #dfdfdf;
+}
+
+.Option.Selected {
+    background: #fff;
+    border-bottom: none;
+}
+
+/* TODO make option and result separate components with separate CSS files */
+.Result {
+    border-right: solid 1px #dfdfdf;
+    border-left: solid 1px #dfdfdf;
+    border-bottom: solid 1px #dfdfdf;
+    padding: 20px 30px;
+    position: relative;
+    min-height: 39px;
+    box-sizing: border-box;
+    font-family: "Guardian Egyptian Text", Georgia, serif;
+}
+
+.Number {
+    position: absolute;
+}
+
+.Title {
+    max-width: 500px;
+    overflow: hidden;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: auto;
+    color: inherit;
+    text-decoration: none;
+}
+
+.Title:hover {
+    text-decoration: underline;
+}
