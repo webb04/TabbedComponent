@@ -2,6 +2,10 @@
 - npm install
 - npm start
 
+## To Test
+- npm install
+- npm run test
+
 ## TODO
 - Loading state when navigating between options (skeleton blocks)
 - Mobile responsiveness (media queries)
@@ -10,11 +14,13 @@
 - Default props
 - Proptypes
 - Network error state
-- Tests!
+- More tests! (More jest/enzyme unit tests and functional e2e tests using selenium, nightwatch.js, cypress)
 - React 16 error boundary state
 - Subtle css animations when changing option
 - Cache results after first request
-- Pagination options
+- Pagination options to load more stories
+- Set a limit of 5 in the network request if possible (no point fetching more than we show)
+- Open story in new tab? `target="_blank" rel="noopener noreferrer"`
 
 ## Available Scripts
 

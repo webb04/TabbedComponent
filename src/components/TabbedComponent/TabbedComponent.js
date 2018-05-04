@@ -23,8 +23,6 @@ class TabbedComponent extends Component {
     }
 
     fetchNews() {
-        console.log('fetchong news')
-        console.log(this.getUrl());
         axios.get(this.getUrl())
             .then(({ data }) => this.setState({ results: data.response.results.slice(0, 5)}));
     }
@@ -53,7 +51,7 @@ class TabbedComponent extends Component {
                 {
                     results.map(({ webTitle, webUrl }, i) => {
                         return (
-                            <div className="Result">
+                            <div key={`result-${i}`} className="Result">
                                 <div className="Number">{ i + 1 }</div>
                                 <a className="Title" href={webUrl}>{ webTitle }</a>
                             </div>
